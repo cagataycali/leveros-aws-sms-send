@@ -5,11 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Çağatay Çalı",
   "license": "ISC",
   "dependencies": {
-    "aws-sms-send": "^1.0.32"
-  }
+    "aws-sms-send": "^1.0.32",
+    "snyk": "^1.192.3"
+  },
+  "snyk": true
 }
